@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 <body>
 <header>
@@ -93,8 +94,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#_changepass" class="tsd-kind-icon">_change<wbr>Pass</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#_deletekey" class="tsd-kind-icon">_delete<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#_finishrecovery" class="tsd-kind-icon">_finish<wbr>Recovery</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#_getbots" class="tsd-kind-icon">_get<wbr>Bots</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#_recovery" class="tsd-kind-icon">_recovery</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#_sendconfirm" class="tsd-kind-icon">_send<wbr>Confirm</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#addkey" class="tsd-kind-icon">add<wbr>Key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#confirm" class="tsd-kind-icon">confirm</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.user.html#delete" class="tsd-kind-icon">delete</a></li>
@@ -114,13 +117,13 @@
 					<a name="_changepass" class="tsd-anchor"></a>
 					<h3>_change<wbr>Pass</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">_change<wbr>Pass<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_special_api_types_d_.changepassdata.html" class="tsd-signature-type">ChangePassData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">_change<wbr>Pass<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_special_api_types_d_.changepassdata.html" class="tsd-signature-type">ChangePassData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L46">api.d.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L96">doc/api.d.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -134,7 +137,7 @@
 									<h5>data: <a href="_special_api_types_d_.changepassdata.html" class="tsd-signature-type">ChangePassData</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -142,13 +145,13 @@
 					<a name="_deletekey" class="tsd-anchor"></a>
 					<h3>_delete<wbr>Key</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">_delete<wbr>Key<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">_delete<wbr>Key<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L87">api.d.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L190">doc/api.d.ts:190</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -164,7 +167,32 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="_finishrecovery" class="tsd-anchor"></a>
+					<h3>_finish<wbr>Recovery</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">_finish<wbr>Recovery<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L86">doc/api.d.ts:86</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -178,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L51">api.d.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L109">doc/api.d.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,13 +230,13 @@
 					<a name="_recovery" class="tsd-anchor"></a>
 					<h3>_recovery</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">_recovery<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">_recovery<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_status_invalid.html" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L41">api.d.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L73">doc/api.d.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,7 +256,32 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_status_invalid.html" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="_sendconfirm" class="tsd-anchor"></a>
+					<h3>_send<wbr>Confirm</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">_send<wbr>Confirm<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_status_invalid.html" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L128">doc/api.d.ts:128</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_status_invalid.html" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -236,13 +289,13 @@
 					<a name="addkey" class="tsd-anchor"></a>
 					<h3>add<wbr>Key</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Key<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>exchangeID<span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#exchangeid" class="tsd-signature-type">ExchangeId</a><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>public<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Key<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>exchangeID<span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#exchangeid" class="tsd-signature-type">ExchangeId</a><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>public<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_exists.html" class="tsd-signature-type">DATA_EXISTS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_no_access.html" class="tsd-signature-type">SERVICE_NO_ACCESS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_disconnected.html" class="tsd-signature-type">SERVICE_DISCONNECTED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_handle_error.html" class="tsd-signature-type">DATA_HANDLE_ERROR</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L65">api.d.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L142">doc/api.d.ts:142</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -270,7 +323,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_exists.html" class="tsd-signature-type">DATA_EXISTS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_no_access.html" class="tsd-signature-type">SERVICE_NO_ACCESS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_disconnected.html" class="tsd-signature-type">SERVICE_DISCONNECTED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_handle_error.html" class="tsd-signature-type">DATA_HANDLE_ERROR</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -278,13 +331,13 @@
 					<a name="confirm" class="tsd-anchor"></a>
 					<h3>confirm</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">confirm<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></li>
+						<li class="tsd-signature tsd-kind-icon">confirm<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_req_err.html" class="tsd-signature-type">DATA_REQ_ERR</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L33">api.d.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L58">doc/api.d.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,7 +356,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_req_err.html" class="tsd-signature-type">DATA_REQ_ERR</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -311,13 +364,13 @@
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_common_types_d_.baseuserdata.html" class="tsd-signature-type">BaseUserData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></li>
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_common_types_d_.baseuserdata.html" class="tsd-signature-type">BaseUserData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_deleted.html" class="tsd-signature-type">USER_DELETED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L30">api.d.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L46">doc/api.d.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,7 +384,7 @@
 									<h5>data: <a href="_common_types_d_.baseuserdata.html" class="tsd-signature-type">BaseUserData</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_deleted.html" class="tsd-signature-type">USER_DELETED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -339,13 +392,13 @@
 					<a name="getbalance" class="tsd-anchor"></a>
 					<h3>get<wbr>Balance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Balance<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Balance<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_no_access.html" class="tsd-signature-type">SERVICE_NO_ACCESS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_disconnected.html" class="tsd-signature-type">SERVICE_DISCONNECTED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_handle_error.html" class="tsd-signature-type">DATA_HANDLE_ERROR</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L80">api.d.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L173">doc/api.d.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -364,7 +417,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_common_types_d_.html#balances" class="tsd-signature-type">Balances</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_no_access.html" class="tsd-signature-type">SERVICE_NO_ACCESS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_disconnected.html" class="tsd-signature-type">SERVICE_DISCONNECTED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_handle_error.html" class="tsd-signature-type">DATA_HANDLE_ERROR</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -372,13 +425,13 @@
 					<a name="getkeys" class="tsd-anchor"></a>
 					<h3>get<wbr>Keys</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Keys<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_common_types_d_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Keys<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L75">api.d.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L163">doc/api.d.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -386,7 +439,7 @@
 									<p>Returns keys that are assigned to the user&#39;s account</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_common_types_d_.html#key" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.key.html" class="tsd-signature-type">Key</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -394,13 +447,13 @@
 					<a name="login" class="tsd-anchor"></a>
 					<h3>login</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">login<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_common_types_d_.baseuserdata.html" class="tsd-signature-type">BaseUserData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></li>
+						<li class="tsd-signature tsd-kind-icon">login<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_common_types_d_.baseuserdata.html" class="tsd-signature-type">BaseUserData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_status_invalid.html" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_deleted.html" class="tsd-signature-type">USER_DELETED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L24">api.d.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L28">doc/api.d.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -414,7 +467,7 @@
 									<h5>data: <a href="_common_types_d_.baseuserdata.html" class="tsd-signature-type">BaseUserData</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_not_found.html" class="tsd-signature-type">USER_NOT_FOUND</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_status_invalid.html" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.user_deleted.html" class="tsd-signature-type">USER_DELETED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -422,13 +475,13 @@
 					<a name="logout" class="tsd-anchor"></a>
 					<h3>logout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">logout<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></li>
+						<li class="tsd-signature tsd-kind-icon">logout<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L27">api.d.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L40">doc/api.d.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +489,7 @@
 									<p>Logs the user out and returns the cookie data that must be set</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_common_types_d_.html#cookie" class="tsd-signature-type">Cookie</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.cookie.html" class="tsd-signature-type">Cookie</a><span class="tsd-signature-symbol">, </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -444,13 +497,13 @@
 					<a name="new" class="tsd-anchor"></a>
 					<h3>new</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_special_api_types_d_.createuserdata.html" class="tsd-signature-type">CreateUserData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_special_api_types_d_.createuserdata.html" class="tsd-signature-type">CreateUserData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_exists.html" class="tsd-signature-type">DATA_EXISTS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/dbc86f5/doc/api.d.ts#L60">api.d.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/api.d.ts#L118">doc/api.d.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -466,7 +519,7 @@
 									<h5>data: <a href="_special_api_types_d_.createuserdata.html" class="tsd-signature-type">CreateUserData</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_is_auth.html" class="tsd-signature-type">USER_IS_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_exists.html" class="tsd-signature-type">DATA_EXISTS</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_not_found.html" class="tsd-signature-type">DATA_NOT_FOUND</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -489,6 +542,9 @@
 					</li>
 					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_common_types_d_.html">&quot;common-<wbr>types.d&quot;</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-external">
+						<a href="../modules/_errors_d_.html">&quot;errors.d&quot;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_special_api_types_d_.html">&quot;special-<wbr>api-<wbr>types.d&quot;</a>
@@ -515,10 +571,16 @@
 								<a href="_api_d_.user.html#_deletekey" class="tsd-kind-icon">_delete<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_api_d_.user.html#_finishrecovery" class="tsd-kind-icon">_finish<wbr>Recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_api_d_.user.html#_getbots" class="tsd-kind-icon">_get<wbr>Bots</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_api_d_.user.html#_recovery" class="tsd-kind-icon">_recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_api_d_.user.html#_sendconfirm" class="tsd-kind-icon">_send<wbr>Confirm</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_api_d_.user.html#addkey" class="tsd-kind-icon">add<wbr>Key</a>
@@ -568,6 +630,7 @@
 	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
+<script src="../assets/js/prettify.js"></script>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>

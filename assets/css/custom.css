@@ -1,0 +1,38 @@
+:root{
+    --under-construction-color: #fda344;
+}
+
+/* hidden stuff */
+.tsd-breadcrumb > li:first-child,
+.tsd-navigation.primary > ul > li.globals,
+.tsd-panel.tsd-hierarchy{
+    display: none;
+}
+
+.tsd-navigation.secondary > .current > li.tsd-kind-interface.tsd-parent-kind-module > ul > li.tsd-kind-method > a::after,
+.tsd-index-list > .tsd-kind-method.tsd-parent-kind-interface > a::after{
+    content: ' 🛠';
+    color: transparent;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.tsd-navigation.secondary > .current > li.tsd-kind-interface.tsd-parent-kind-module > ul > li.tsd-kind-method > a.under-construction::after,
+.tsd-index-list > .tsd-kind-method.tsd-parent-kind-interface > a.under-construction::after{
+    color: var(--under-construction-color);
+}
+
+.tsd-panel.tsd-member.tsd-kind-method.tsd-parent-kind-interface > h3 > dl{
+    display: inline-flex;
+    margin: 0 0 0 1em;
+    color: var(--under-construction-color);
+}
+
+.tsd-panel.tsd-member.tsd-kind-method.tsd-parent-kind-interface > h3 > dl > dt{
+    border-color: currentColor;
+    color: currentColor;
+}
+
+.tsd-descriptions{
+    margin: 0;
+}

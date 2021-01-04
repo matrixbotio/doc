@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ManagementTemplate | Matrixbot API</title>
+	<title>Balance | Matrixbot API</title>
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -60,10 +60,10 @@
 					<a href="../modules/_common_types_d_.html">&quot;common-types.d&quot;</a>
 				</li>
 				<li>
-					<a href="_common_types_d_.managementtemplate.html">ManagementTemplate</a>
+					<a href="_common_types_d_.balance.html">Balance</a>
 				</li>
 			</ul>
-			<h1>Interface ManagementTemplate</h1>
+			<h1>Interface Balance</h1>
 		</div>
 	</div>
 </header>
@@ -74,12 +74,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_common_types_d_.template.html" class="tsd-signature-type">Template</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ManagementTemplate</span>
-							</li>
-						</ul>
+						<span class="target">Balance</span>
 					</li>
 				</ul>
 			</section>
@@ -90,8 +85,9 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.managementtemplate.html#rules" class="tsd-kind-icon">rules</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.managementtemplate.html#templatename" class="tsd-kind-icon">template<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.balance.html#asset" class="tsd-kind-icon">asset</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.balance.html#free" class="tsd-kind-icon">free</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.balance.html#locked" class="tsd-kind-icon">locked</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,28 +96,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="rules" class="tsd-anchor"></a>
-					<h3>rules</h3>
-					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></div>
+					<a name="asset" class="tsd-anchor"></a>
+					<h3>asset</h3>
+					<div class="tsd-signature tsd-kind-icon">asset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/common-types.d.ts#L111">doc/common-types.d.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/common-types.d.ts#L28">doc/common-types.d.ts:28</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Array of rules (max ~20)</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-					<a name="templatename" class="tsd-anchor"></a>
-					<h3>template<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">template<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="free" class="tsd-anchor"></a>
+					<h3>free</h3>
+					<div class="tsd-signature tsd-kind-icon">free<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float64</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_common_types_d_.template.html">Template</a>.<a href="_common_types_d_.template.html#templatename">templateName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/common-types.d.ts#L71">doc/common-types.d.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/common-types.d.ts#L29">doc/common-types.d.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="locked" class="tsd-anchor"></a>
+					<h3>locked</h3>
+					<div class="tsd-signature tsd-kind-icon">locked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float64</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/4821e8e/doc/common-types.d.ts#L30">doc/common-types.d.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,9 +155,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.balance.html" class="tsd-kind-icon">Balance</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_common_types_d_.balance.html#asset" class="tsd-kind-icon">asset</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_common_types_d_.balance.html#free" class="tsd-kind-icon">free</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_common_types_d_.balance.html#locked" class="tsd-kind-icon">locked</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.baseuserdata.html" class="tsd-kind-icon">Base<wbr>User<wbr>Data</a>
 					</li>
@@ -188,21 +203,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.key.html" class="tsd-kind-icon">Key</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.managementtemplate.html" class="tsd-kind-icon">Management<wbr>Template</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#rules" class="tsd-kind-icon">rules</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#templatename" class="tsd-kind-icon">template<wbr>Name</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.matrixtemplate.html" class="tsd-kind-icon">Matrix<wbr>Template</a>
 					</li>
