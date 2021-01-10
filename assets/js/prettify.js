@@ -65,7 +65,7 @@ function _returnParser(returnStartNode){
     }
     while(current = current.nextElementSibling){
         if(current.innerText === '<'){
-            if(!openGapCount) res[returnsGot ? 'throws': 'returns'].push(current);
+            if(openGapCount >= 0) res[returnsGot ? 'throws': 'returns'].push(current);
             openGapCount++
         } else if(current.innerText === '>'){
             if(openGapCount) res[returnsGot ? 'throws': 'returns'].push(current);
@@ -83,7 +83,7 @@ function fixReturns(){
     for(const span of symbolsAndTypes){
         if(
             _checkInnerText(span, '<')
-         && _checkInnerText(span.previousElementSibling, 'Return')
+         && _checkInnerText(span.previousElementSibling, 'ThrowablePromise')
          && _checkInnerText(span.previousElementSibling.previousElementSibling, ': ')
         ){
             const { returns } = _returnParser(span.previousElementSibling);
@@ -96,7 +96,7 @@ function fixReturns(){
     }
     for(const returnDescription of returns){
         const firstChild = returnDescription.children[0];
-        if(firstChild && firstChild.classList.contains('tsd-signature-type') && firstChild.innerText === 'Return'){
+        if(firstChild && firstChild.classList.contains('tsd-signature-type') && firstChild.innerText === 'ThrowablePromise'){
             const parsed =_returnParser(firstChild);
             const throws = document.createElement(returnDescription.tagName);
             throws.innerText = 'Throws ';
