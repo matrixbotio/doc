@@ -78,6 +78,11 @@
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">MatrixTemplateBaseInfo</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_common_types_d_.matrixtemplate.html" class="tsd-signature-type">MatrixTemplate</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -104,10 +109,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 					<a name="data" class="tsd-anchor"></a>
 					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>arc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float64</span><span class="tsd-signature-symbol">; </span>factor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float64</span><span class="tsd-signature-symbol">; </span>orders<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">; </span>placeby<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>arc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float64</span><span class="tsd-signature-symbol">; </span>factor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float64</span><span class="tsd-signature-symbol">; </span>grid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">float64</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>orders<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">; </span>placeby<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/1e1a80b/doc/common-types.d.ts#L178">doc/common-types.d.ts:178</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/3c044c9/doc/common-types.d.ts#L146">doc/common-types.d.ts:146</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -115,15 +120,48 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>arc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float64</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Grid arc factor</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>factor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float64</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Matrix factor</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>grid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">float64</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Orders grid in %</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>example</dt>
+										<dd><p>[0.1, 0.5, ..., 3.4]</p>
+										</dd>
+									</dl>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>orders<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Orders in grid</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>placeby<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Partial placing of orders</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -131,11 +169,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="id" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_common_types_d_.templatebaseinfo.html">TemplateBaseInfo</a>.<a href="_common_types_d_.templatebaseinfo.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/1e1a80b/doc/common-types.d.ts#L174">doc/common-types.d.ts:174</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/3c044c9/doc/common-types.d.ts#L137">doc/common-types.d.ts:137</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +184,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_common_types_d_.templatebaseinfo.html">TemplateBaseInfo</a>.<a href="_common_types_d_.templatebaseinfo.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/1e1a80b/doc/common-types.d.ts#L173">doc/common-types.d.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/3c044c9/doc/common-types.d.ts#L136">doc/common-types.d.ts:136</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"matrix"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/1e1a80b/doc/common-types.d.ts#L184">doc/common-types.d.ts:184</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/3c044c9/doc/common-types.d.ts#L161">doc/common-types.d.ts:161</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -264,6 +302,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.templatebaseinfo.html" class="tsd-kind-icon">Template<wbr>Base<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_common_types_d_.templatefullinfo.html" class="tsd-kind-icon">Template<wbr>Full<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.xpairtemplate.html" class="tsd-kind-icon">XPair<wbr>Template</a>
