@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ManagementTemplate | Matrixbot API</title>
+	<title>XPairTemplateBaseInfo | Matrixbot API</title>
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -60,10 +60,10 @@
 					<a href="../modules/_common_types_d_.html">&quot;common-types.d&quot;</a>
 				</li>
 				<li>
-					<a href="_common_types_d_.managementtemplate.html">ManagementTemplate</a>
+					<a href="_common_types_d_.xpairtemplatebaseinfo.html">XPairTemplateBaseInfo</a>
 				</li>
 			</ul>
-			<h1>Interface ManagementTemplate</h1>
+			<h1>Interface XPairTemplateBaseInfo</h1>
 		</div>
 	</div>
 </header>
@@ -74,13 +74,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-signature-type">ManagementTemplateBaseInfo</a>
-					</li>
-					<li>
-						<a href="_common_types_d_.templatefullinfo.html" class="tsd-signature-type">TemplateFullInfo</a>
+						<a href="_common_types_d_.templatebaseinfo.html" class="tsd-signature-type">TemplateBaseInfo</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ManagementTemplate</span>
+								<span class="target">XPairTemplateBaseInfo</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_common_types_d_.xpairtemplate.html" class="tsd-signature-type">XPairTemplate</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -93,11 +95,10 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.managementtemplate.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_common_types_d_.managementtemplate.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-external"><a href="_common_types_d_.managementtemplate.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.managementtemplate.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.managementtemplate.html#uid" class="tsd-kind-icon">uid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.xpairtemplatebaseinfo.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.xpairtemplatebaseinfo.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.xpairtemplatebaseinfo.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.xpairtemplatebaseinfo.html#type-1" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,72 +106,66 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
 					<a name="data" class="tsd-anchor"></a>
 					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>rules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_common_types_d_.managementtemplatebaseinfo.html">ManagementTemplateBaseInfo</a>.<a href="_common_types_d_.managementtemplatebaseinfo.html#data">data</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L187">doc/common-types.d.ts:187</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L165">doc/common-types.d.ts:165</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>rules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>Array of rules (max ~20)</p>
+										<p>Array of symbols</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>false - whitelist, true - blacklist</p>
 									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_common_types_d_.templatebaseinfo.html">TemplateBaseInfo</a>.<a href="_common_types_d_.templatebaseinfo.html#id">id</a></p>
+						<p>Inherited from <a href="_common_types_d_.templatebaseinfo.html">TemplateBaseInfo</a>.<a href="_common_types_d_.templatebaseinfo.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L207">doc/common-types.d.ts:207</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L137">doc/common-types.d.ts:137</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_common_types_d_.templatebaseinfo.html">TemplateBaseInfo</a>.<a href="_common_types_d_.templatebaseinfo.html#name">name</a></p>
-						<p>Overrides <a href="_common_types_d_.templatefullinfo.html">TemplateFullInfo</a>.<a href="_common_types_d_.templatefullinfo.html#name">name</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L136">doc/common-types.d.ts:136</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-					<a name="type" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="type-1" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"management"</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"xpair"</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_common_types_d_.managementtemplatebaseinfo.html">ManagementTemplateBaseInfo</a>.<a href="_common_types_d_.managementtemplatebaseinfo.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L191">doc/common-types.d.ts:191</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-					<a name="uid" class="tsd-anchor"></a>
-					<h3>uid</h3>
-					<div class="tsd-signature tsd-kind-icon">uid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_common_types_d_.templatefullinfo.html">TemplateFullInfo</a>.<a href="_common_types_d_.templatefullinfo.html#uid">uid</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L142">doc/common-types.d.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/ba477e7/doc/common-types.d.ts#L171">doc/common-types.d.ts:171</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,30 +232,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.key.html" class="tsd-kind-icon">Key</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.managementtemplate.html" class="tsd-kind-icon">Management<wbr>Template</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#data" class="tsd-kind-icon">data</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#type" class="tsd-kind-icon">type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="_common_types_d_.managementtemplate.html#uid" class="tsd-kind-icon">uid</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-kind-icon">Management<wbr>Template<wbr>Base<wbr>Info</a>
 					</li>
@@ -288,9 +262,27 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.xpairtemplate.html" class="tsd-kind-icon">XPair<wbr>Template</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.xpairtemplatebaseinfo.html" class="tsd-kind-icon">XPair<wbr>Template<wbr>Base<wbr>Info</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_common_types_d_.xpairtemplatebaseinfo.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+								<a href="_common_types_d_.xpairtemplatebaseinfo.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+								<a href="_common_types_d_.xpairtemplatebaseinfo.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_common_types_d_.xpairtemplatebaseinfo.html#type-1" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-external">
 						<a href="../modules/_common_types_d_.html#balances" class="tsd-kind-icon">Balances</a>
 					</li>
