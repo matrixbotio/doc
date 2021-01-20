@@ -93,9 +93,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.tt.html#delete" class="tsd-kind-icon">delete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.tt.html#edit" class="tsd-kind-icon">edit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.tt.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="_api_d_.tt.html#getall" class="tsd-kind-icon">get<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_api_d_.tt.html#save" class="tsd-kind-icon">save</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,7 +113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/f1131d0/doc/api.d.ts#L440">doc/api.d.ts:440</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/2911948/doc/api.d.ts#L440">doc/api.d.ts:440</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -137,36 +137,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="edit" class="tsd-anchor"></a>
-					<h3>edit</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">edit<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_common_types_d_.matrixtemplatebaseinfo.html" class="tsd-signature-type">MatrixTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.xpairtemplatebaseinfo.html" class="tsd-signature-type">XPairTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.starttemplatebaseinfo.html" class="tsd-signature-type">StartTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-signature-type">ManagementTemplateBaseInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/f1131d0/doc/api.d.ts#L378">doc/api.d.ts:378</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates or updates template.</p>
-								</div>
-								<p>This method combines creating and modifying a template, this is determined by passing id</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>data: <a href="_common_types_d_.matrixtemplatebaseinfo.html" class="tsd-signature-type">MatrixTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.xpairtemplatebaseinfo.html" class="tsd-signature-type">XPairTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.starttemplatebaseinfo.html" class="tsd-signature-type">StartTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-signature-type">ManagementTemplateBaseInfo</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Template ID</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -176,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/f1131d0/doc/api.d.ts#L393">doc/api.d.ts:393</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/2911948/doc/api.d.ts#L393">doc/api.d.ts:393</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/f1131d0/doc/api.d.ts#L409">doc/api.d.ts:409</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/2911948/doc/api.d.ts#L409">doc/api.d.ts:409</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/f1131d0/doc/api.d.ts#L426">doc/api.d.ts:426</a></li>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/2911948/doc/api.d.ts#L426">doc/api.d.ts:426</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,6 +226,36 @@
 								If type is <span class="tsd-signature-type">&quot;xpair&quot;</span> — <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.xpairtemplate.html" class="tsd-signature-type">XPairTemplate</a><span class="tsd-signature-symbol">&gt;</span><br/>
 								If type is <span class="tsd-signature-type">&quot;start&quot;</span> — <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.starttemplate.html" class="tsd-signature-type">StartTemplate</a><span class="tsd-signature-symbol">&gt;</span><br/>
 							If type is <span class="tsd-signature-type">&quot;management&quot;</span> — <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_common_types_d_.managementtemplate.html" class="tsd-signature-type">ManagementTemplate</a><span class="tsd-signature-symbol">&gt;</span><br/></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="save" class="tsd-anchor"></a>
+					<h3>save</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="_common_types_d_.matrixtemplatebaseinfo.html" class="tsd-signature-type">MatrixTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.xpairtemplatebaseinfo.html" class="tsd-signature-type">XPairTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.starttemplatebaseinfo.html" class="tsd-signature-type">StartTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-signature-type">ManagementTemplateBaseInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matrixbotio/core/blob/2911948/doc/api.d.ts#L378">doc/api.d.ts:378</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates or updates template.</p>
+								</div>
+								<p>This method combines creating and modifying a template, this is determined by passing id</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="_common_types_d_.matrixtemplatebaseinfo.html" class="tsd-signature-type">MatrixTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.xpairtemplatebaseinfo.html" class="tsd-signature-type">XPairTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.starttemplatebaseinfo.html" class="tsd-signature-type">StartTemplateBaseInfo</a><span class="tsd-signature-symbol"> | </span><a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-signature-type">ManagementTemplateBaseInfo</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol">, </span><a href="_errors_d_.user_not_auth.html" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_empty.html" class="tsd-signature-type">DATA_EMPTY</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.data_invalid.html" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="_errors_d_.service_req_failed.html" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Template ID</p>
 						</li>
 					</ul>
 				</section>
@@ -304,13 +304,13 @@
 								<a href="_api_d_.tt.html#delete" class="tsd-kind-icon">delete</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_api_d_.tt.html#edit" class="tsd-kind-icon">edit</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_api_d_.tt.html#get" class="tsd-kind-icon">get</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
 								<a href="_api_d_.tt.html#getall" class="tsd-kind-icon">get<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_api_d_.tt.html#save" class="tsd-kind-icon">save</a>
 							</li>
 						</ul>
 					</li>
