@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BotMinimalInfo | Matrixbot API</title>
+	<title>TemplateEditInfo | Matrixbot API</title>
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -60,10 +60,10 @@
 					<a href="../modules/_common_types_d_.html">&quot;common-types.d&quot;</a>
 				</li>
 				<li>
-					<a href="_common_types_d_.botminimalinfo.html">BotMinimalInfo</a>
+					<a href="_common_types_d_.templateeditinfo.html">TemplateEditInfo</a>
 				</li>
 			</ul>
-			<h1>Interface BotMinimalInfo</h1>
+			<h1>Interface TemplateEditInfo</h1>
 		</div>
 	</div>
 </header>
@@ -74,13 +74,22 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">BotMinimalInfo</span>
+						<span class="target">TemplateEditInfo</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_common_types_d_.botbaseinfo.html" class="tsd-signature-type">BotBaseInfo</a>
+								<a href="_common_types_d_.templatefullinfo.html" class="tsd-signature-type">TemplateFullInfo</a>
 							</li>
 							<li>
-								<a href="_common_types_d_.botshortinfo.html" class="tsd-signature-type">BotShortInfo</a>
+								<a href="_common_types_d_.matrixtemplateeditinfo.html" class="tsd-signature-type">MatrixTemplateEditInfo</a>
+							</li>
+							<li>
+								<a href="_common_types_d_.xpairtemplateeditinfo.html" class="tsd-signature-type">XPairTemplateEditInfo</a>
+							</li>
+							<li>
+								<a href="_common_types_d_.starttemplateeditinfo.html" class="tsd-signature-type">StartTemplateEditInfo</a>
+							</li>
+							<li>
+								<a href="_common_types_d_.managementtemplateeditinfo.html" class="tsd-signature-type">ManagementTemplateEditInfo</a>
 							</li>
 						</ul>
 					</li>
@@ -93,13 +102,7 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#cover" class="tsd-kind-icon">cover</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#limit" class="tsd-kind-icon">limit</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#matrixid" class="tsd-kind-icon">matrixID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#profit" class="tsd-kind-icon">profit</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#strategy" class="tsd-kind-icon">strategy</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.botminimalinfo.html#symbol" class="tsd-kind-icon">symbol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.templateeditinfo.html#id" class="tsd-kind-icon">id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,107 +111,17 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="cover" class="tsd-anchor"></a>
-					<h3>cover</h3>
-					<div class="tsd-signature tsd-kind-icon">cover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float64</span></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L88">doc/common-types.d.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L151">doc/common-types.d.ts:151</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Grid cover</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="limit" class="tsd-anchor"></a>
-					<h3>limit</h3>
-					<div class="tsd-signature tsd-kind-icon">limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float64</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L86">doc/common-types.d.ts:86</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Trade amount for bot</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="matrixid" class="tsd-anchor"></a>
-					<h3>matrixID</h3>
-					<div class="tsd-signature tsd-kind-icon">matrixID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L92">doc/common-types.d.ts:92</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Matrix template name or array</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L80">doc/common-types.d.ts:80</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Unique bot name by user</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="profit" class="tsd-anchor"></a>
-					<h3>profit</h3>
-					<div class="tsd-signature tsd-kind-icon">profit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float64</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L90">doc/common-types.d.ts:90</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Profit</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="strategy" class="tsd-anchor"></a>
-					<h3>strategy</h3>
-					<div class="tsd-signature tsd-kind-icon">strategy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L84">doc/common-types.d.ts:84</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Type strategy</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/16a5894/doc/common-types.d.ts#L82">doc/common-types.d.ts:82</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Trade pair</p>
+							<p>ID of the template</p>
 						</div>
 					</div>
 				</section>
@@ -260,36 +173,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.botinfo.html" class="tsd-kind-icon">Bot<wbr>Info</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.botminimalinfo.html" class="tsd-kind-icon">Bot<wbr>Minimal<wbr>Info</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#cover" class="tsd-kind-icon">cover</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#limit" class="tsd-kind-icon">limit</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#matrixid" class="tsd-kind-icon">matrixID</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#profit" class="tsd-kind-icon">profit</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#strategy" class="tsd-kind-icon">strategy</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.botminimalinfo.html#symbol" class="tsd-kind-icon">symbol</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.botshortinfo.html" class="tsd-kind-icon">Bot<wbr>Short<wbr>Info</a>
 					</li>
@@ -353,9 +239,18 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.templatecreateinfo.html" class="tsd-kind-icon">Template<wbr>Create<wbr>Info</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.templateeditinfo.html" class="tsd-kind-icon">Template<wbr>Edit<wbr>Info</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_common_types_d_.templateeditinfo.html#id" class="tsd-kind-icon">id</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
 						<a href="_common_types_d_.templatefullinfo.html" class="tsd-kind-icon">Template<wbr>Full<wbr>Info</a>
 					</li>
