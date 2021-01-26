@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>USER_NOT_AUTH | Matrixbot API</title>
+	<title>BOT_IS_ACTIVE | Matrixbot API</title>
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,13 +57,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_errors_d_.html">&quot;errors.d&quot;</a>
+					<a href="../modules/_errors_bot_d_.html">&quot;errors/bot.d&quot;</a>
 				</li>
 				<li>
-					<a href="_errors_d_.user_not_auth.html">USER_NOT_AUTH</a>
+					<a href="_errors_bot_d_.bot_is_active.html">BOT_IS_ACTIVE</a>
 				</li>
 			</ul>
-			<h1>Interface USER_NOT_AUTH</h1>
+			<h1>Interface BOT_IS_ACTIVE</h1>
 		</div>
 	</div>
 </header>
@@ -74,10 +74,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_errors_d_.apierror.html" class="tsd-signature-type">APIError</a>
+						<a href="_common_types_d_.apierror.html" class="tsd-signature-type">APIError</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">USER_NOT_AUTH</span>
+								<span class="target">BOT_IS_ACTIVE</span>
 							</li>
 						</ul>
 					</li>
@@ -90,10 +90,10 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_d_.user_not_auth.html#code" class="tsd-kind-icon">code</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_d_.user_not_auth.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_d_.user_not_auth.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_errors_d_.user_not_auth.html#stack" class="tsd-kind-icon">stack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_bot_d_.bot_is_active.html#code" class="tsd-kind-icon">code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_bot_d_.bot_is_active.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_bot_d_.bot_is_active.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_errors_bot_d_.bot_is_active.html#stack" class="tsd-kind-icon">stack</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,33 +104,33 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
 					<a name="code" class="tsd-anchor"></a>
 					<h3>code</h3>
-					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">-1200</span></div>
+					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">-4200</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_errors_d_.apierror.html">APIError</a>.<a href="_errors_d_.apierror.html#code">code</a></p>
+						<p>Overrides <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#code">code</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/d6d6bf7/doc/errors.d.ts#L14">doc/errors.d.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/77f82be/doc/errors/bot.d.ts#L25">doc/errors/bot.d.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
 					<a name="message" class="tsd-anchor"></a>
 					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"user is not authorized"</span></div>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"operations with the bot are impossible, since it is active"</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_errors_d_.apierror.html">APIError</a>.<a href="_errors_d_.apierror.html#message">message</a></p>
+						<p>Overrides <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/d6d6bf7/doc/errors.d.ts#L12">doc/errors.d.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/77f82be/doc/errors/bot.d.ts#L23">doc/errors/bot.d.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"USER_NOT_AUTH"</span></div>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"BOT_IS_ACTIVE"</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="_errors_d_.apierror.html">APIError</a>.<a href="_errors_d_.apierror.html#name">name</a></p>
+						<p>Overrides <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/d6d6bf7/doc/errors.d.ts#L13">doc/errors.d.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/77f82be/doc/errors/bot.d.ts#L24">doc/errors/bot.d.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,7 +139,7 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
 					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_errors_d_.apierror.html">APIError</a>.<a href="_errors_d_.apierror.html#stack">stack</a></p>
+						<p>Inherited from <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#stack">stack</a></p>
 						<ul>
 							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:975</li>
 						</ul>
@@ -165,8 +165,20 @@
 					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_common_types_d_.html">&quot;common-<wbr>types.d&quot;</a>
 					</li>
-					<li class="current tsd-kind-module tsd-is-external">
+					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_errors_d_.html">&quot;errors.d&quot;</a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-external">
+						<a href="../modules/_errors_bot_d_.html">&quot;errors/bot.d&quot;</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-external">
+						<a href="../modules/_errors_data_d_.html">&quot;errors/data.d&quot;</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-external">
+						<a href="../modules/_errors_service_d_.html">&quot;errors/service.d&quot;</a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-external">
+						<a href="../modules/_errors_user_d_.html">&quot;errors/user.d&quot;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_special_api_types_d_.html">&quot;special-<wbr>api-<wbr>types.d&quot;</a>
@@ -176,70 +188,34 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.apierror.html" class="tsd-kind-icon">APIError</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_empty.html" class="tsd-kind-icon">DATA_<wbr>EMPTY</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_exists.html" class="tsd-kind-icon">DATA_<wbr>EXISTS</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_handle_error.html" class="tsd-kind-icon">DATA_<wbr>HANDLE_<wbr>ERROR</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_invalid.html" class="tsd-kind-icon">DATA_<wbr>INVALID</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_not_found.html" class="tsd-kind-icon">DATA_<wbr>NOT_<wbr>FOUND</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_no_access.html" class="tsd-kind-icon">DATA_<wbr>NO_<wbr>ACCESS</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.data_req_err.html" class="tsd-kind-icon">DATA_<wbr>REQ_<wbr>ERR</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.service_disconnected.html" class="tsd-kind-icon">SERVICE_<wbr>DISCONNECTED</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.service_no_access.html" class="tsd-kind-icon">SERVICE_<wbr>NO_<wbr>ACCESS</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.service_req_failed.html" class="tsd-kind-icon">SERVICE_<wbr>REQ_<wbr>FAILED</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.user_deleted.html" class="tsd-kind-icon">USER_<wbr>DELETED</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.user_is_auth.html" class="tsd-kind-icon">USER_<wbr>IS_<wbr>AUTH</a>
+						<a href="_errors_bot_d_.bot_inactive.html" class="tsd-kind-icon">BOT_<wbr>INACTIVE</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.user_not_auth.html" class="tsd-kind-icon">USER_<wbr>NOT_<wbr>AUTH</a>
+						<a href="_errors_bot_d_.bot_is_active.html" class="tsd-kind-icon">BOT_<wbr>IS_<wbr>ACTIVE</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
-								<a href="_errors_d_.user_not_auth.html#code" class="tsd-kind-icon">code</a>
+								<a href="_errors_bot_d_.bot_is_active.html#code" class="tsd-kind-icon">code</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
-								<a href="_errors_d_.user_not_auth.html#message" class="tsd-kind-icon">message</a>
+								<a href="_errors_bot_d_.bot_is_active.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
-								<a href="_errors_d_.user_not_auth.html#name" class="tsd-kind-icon">name</a>
+								<a href="_errors_bot_d_.bot_is_active.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="_errors_d_.user_not_auth.html#stack" class="tsd-kind-icon">stack</a>
+								<a href="_errors_bot_d_.bot_is_active.html#stack" class="tsd-kind-icon">stack</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.user_not_found.html" class="tsd-kind-icon">USER_<wbr>NOT_<wbr>FOUND</a>
+						<a href="_errors_bot_d_.bot_not_found.html" class="tsd-kind-icon">BOT_<wbr>NOT_<wbr>FOUND</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_errors_d_.user_status_invalid.html" class="tsd-kind-icon">USER_<wbr>STATUS_<wbr>INVALID</a>
+						<a href="_errors_bot_d_.not_enough_balance.html" class="tsd-kind-icon">NOT_<wbr>ENOUGH_<wbr>BALANCE</a>
 					</li>
 				</ul>
 			</nav>
