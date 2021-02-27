@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ManagementTemplateBaseInfo | Matrixbot API</title>
+	<title>DATA_EMPTY | Matrixbot API</title>
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,13 +57,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_common_types_d_.html">&quot;common-types.d&quot;</a>
+					<a href="../modules/_errors_data_d_.html">&quot;errors/data.d&quot;</a>
 				</li>
 				<li>
-					<a href="_common_types_d_.managementtemplatebaseinfo.html">ManagementTemplateBaseInfo</a>
+					<a href="_errors_data_d_.data_empty.html">DATA_EMPTY</a>
 				</li>
 			</ul>
-			<h1>Interface ManagementTemplateBaseInfo</h1>
+			<h1>Interface DATA_EMPTY</h1>
 		</div>
 	</div>
 </header>
@@ -74,21 +74,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_common_types_d_.templatebaseinfo.html" class="tsd-signature-type">TemplateBaseInfo</a>
+						<a href="_common_types_d_.apierror.html" class="tsd-signature-type">APIError</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ManagementTemplateBaseInfo</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="_common_types_d_.managementtemplatecreateinfo.html" class="tsd-signature-type">ManagementTemplateCreateInfo</a>
-									</li>
-									<li>
-										<a href="_common_types_d_.managementtemplateeditinfo.html" class="tsd-signature-type">ManagementTemplateEditInfo</a>
-									</li>
-									<li>
-										<a href="_common_types_d_.managementtemplate.html" class="tsd-signature-type">ManagementTemplate</a>
-									</li>
-								</ul>
+								<span class="target">DATA_EMPTY</span>
 							</li>
 						</ul>
 					</li>
@@ -101,9 +90,10 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.managementtemplatebaseinfo.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_common_types_d_.managementtemplatebaseinfo.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_common_types_d_.managementtemplatebaseinfo.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_data_d_.data_empty.html#code" class="tsd-kind-icon">code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_data_d_.data_empty.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external"><a href="_errors_data_d_.data_empty.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="_errors_data_d_.data_empty.html#stack" class="tsd-kind-icon">stack</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,47 +101,47 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="data" class="tsd-anchor"></a>
-					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>rules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
+					<a name="code" class="tsd-anchor"></a>
+					<h3>code</h3>
+					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">-2200</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#code">code</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/35f69f7/doc/common-types.d.ts#L226">doc/common-types.d.ts:226</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/35f69f7/doc/errors/data.d.ts#L61">doc/errors/data.d.ts:61</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>rules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Array of rules (max ~20)</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"no value passed"</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#message">message</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/35f69f7/doc/errors/data.d.ts#L59">doc/errors/data.d.ts:59</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"DATA_EMPTY"</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_common_types_d_.templatebaseinfo.html">TemplateBaseInfo</a>.<a href="_common_types_d_.templatebaseinfo.html#name">name</a></p>
+						<p>Overrides <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/35f69f7/doc/common-types.d.ts#L167">doc/common-types.d.ts:167</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/35f69f7/doc/errors/data.d.ts#L60">doc/errors/data.d.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"management"</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+					<a name="stack" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
+					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_common_types_d_.apierror.html">APIError</a>.<a href="_common_types_d_.apierror.html#stack">stack</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/core/blob/35f69f7/doc/common-types.d.ts#L230">doc/common-types.d.ts:230</a></li>
+							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:975</li>
 						</ul>
 					</aside>
 				</section>
@@ -172,7 +162,7 @@
 					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class="current tsd-kind-module tsd-is-external">
+					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_common_types_d_.html">&quot;common-<wbr>types.d&quot;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-external">
@@ -184,7 +174,7 @@
 					<li class=" tsd-kind-module tsd-is-external">
 						<a href="../modules/_errors_bot_d_.html">&quot;errors/bot.d&quot;</a>
 					</li>
-					<li class=" tsd-kind-module tsd-is-external">
+					<li class="current tsd-kind-module tsd-is-external">
 						<a href="../modules/_errors_data_d_.html">&quot;errors/data.d&quot;</a>
 					</li>
 					<li class=" tsd-kind-module tsd-is-external">
@@ -203,21 +193,45 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_common_types_d_.managementtemplatebaseinfo.html" class="tsd-kind-icon">Management<wbr>Template<wbr>Base<wbr>Info</a>
+						<a href="_errors_data_d_.data_empty.html" class="tsd-kind-icon">DATA_<wbr>EMPTY</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.managementtemplatebaseinfo.html#data" class="tsd-kind-icon">data</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
+								<a href="_errors_data_d_.data_empty.html#code" class="tsd-kind-icon">code</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
+								<a href="_errors_data_d_.data_empty.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-external">
+								<a href="_errors_data_d_.data_empty.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="_common_types_d_.managementtemplatebaseinfo.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_common_types_d_.managementtemplatebaseinfo.html#type" class="tsd-kind-icon">type</a>
+								<a href="_errors_data_d_.data_empty.html#stack" class="tsd-kind-icon">stack</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_exists.html" class="tsd-kind-icon">DATA_<wbr>EXISTS</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_handle_error.html" class="tsd-kind-icon">DATA_<wbr>HANDLE_<wbr>ERROR</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_invalid.html" class="tsd-kind-icon">DATA_<wbr>INVALID</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_not_found.html" class="tsd-kind-icon">DATA_<wbr>NOT_<wbr>FOUND</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_no_access.html" class="tsd-kind-icon">DATA_<wbr>NO_<wbr>ACCESS</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_req_err.html" class="tsd-kind-icon">DATA_<wbr>REQ_<wbr>ERR</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_errors_data_d_.data_unknown.html" class="tsd-kind-icon">DATA_<wbr>UNKNOWN</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
