@@ -95,8 +95,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#addkey" class="tsd-kind-icon">add<wbr>Key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#confirm" class="tsd-kind-icon">confirm</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#deletekey" class="tsd-kind-icon">delete<wbr>Key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#echo" class="tsd-kind-icon">echo</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#finishrecovery" class="tsd-kind-icon">finish<wbr>Recovery</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#getkeys" class="tsd-kind-icon">get<wbr>Keys</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#login" class="tsd-kind-icon">login</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_doc_api_d_.user.html#logout" class="tsd-kind-icon">logout</a></li>
@@ -231,6 +233,42 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="deletekey" class="tsd-anchor"></a>
+					<h3>delete<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Key<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="../modules/_doc_errors_d_.html#base_internal_error" class="tsd-signature-type">BASE_INTERNAL_ERROR</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#data_invalid" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_not_auth" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_status_invalid" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in doc/api.d.ts:40</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove one of the user&#39;s API keys</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">, </span><a href="../modules/_doc_errors_d_.html#base_internal_error" class="tsd-signature-type">BASE_INTERNAL_ERROR</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#data_invalid" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_not_auth" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_status_invalid" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="echo" class="tsd-anchor"></a>
 					<h3>echo</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
@@ -240,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:40</li>
+									<li>Defined in doc/api.d.ts:48</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -273,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:50</li>
+									<li>Defined in doc/api.d.ts:58</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -300,6 +338,42 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="getbalance" class="tsd-anchor"></a>
+					<h3>get<wbr>Balance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Balance<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>asset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>free<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">; </span>locked<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../modules/_doc_errors_d_.html#base_internal_error" class="tsd-signature-type">BASE_INTERNAL_ERROR</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#data_handle_err" class="tsd-signature-type">DATA_HANDLE_ERR</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#data_invalid" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_not_auth" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_status_invalid" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#service_no_access" class="tsd-signature-type">SERVICE_NO_ACCESS</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#service_req_failed" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in doc/api.d.ts:66</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get user&#39;s balance by key ID. Method can be used to check keys</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>auth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>keyID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">int</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ThrowablePromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>asset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>free<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">; </span>locked<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../modules/_doc_errors_d_.html#base_internal_error" class="tsd-signature-type">BASE_INTERNAL_ERROR</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#data_handle_err" class="tsd-signature-type">DATA_HANDLE_ERR</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#data_invalid" class="tsd-signature-type">DATA_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_not_auth" class="tsd-signature-type">USER_NOT_AUTH</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#user_status_invalid" class="tsd-signature-type">USER_STATUS_INVALID</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#service_no_access" class="tsd-signature-type">SERVICE_NO_ACCESS</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_doc_errors_d_.html#service_req_failed" class="tsd-signature-type">SERVICE_REQ_FAILED</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="getkeys" class="tsd-anchor"></a>
 					<h3>get<wbr>Keys</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
@@ -309,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:58</li>
+									<li>Defined in doc/api.d.ts:78</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:71</li>
+									<li>Defined in doc/api.d.ts:91</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:79</li>
+									<li>Defined in doc/api.d.ts:99</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -411,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:86</li>
+									<li>Defined in doc/api.d.ts:106</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -450,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:95</li>
+									<li>Defined in doc/api.d.ts:115</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -483,7 +557,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:102</li>
+									<li>Defined in doc/api.d.ts:122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,7 +590,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in doc/api.d.ts:109</li>
+									<li>Defined in doc/api.d.ts:129</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,10 +658,16 @@
 								<a href="_doc_api_d_.user.html#delete" class="tsd-kind-icon">delete</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_doc_api_d_.user.html#deletekey" class="tsd-kind-icon">delete<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_doc_api_d_.user.html#echo" class="tsd-kind-icon">echo</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_doc_api_d_.user.html#finishrecovery" class="tsd-kind-icon">finish<wbr>Recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_doc_api_d_.user.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_doc_api_d_.user.html#getkeys" class="tsd-kind-icon">get<wbr>Keys</a>
