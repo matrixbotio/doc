@@ -98,7 +98,9 @@ function fixParameters(){
         parameterList.remove();
     }
     for(const signature of methodSignatures){
-        const argsTextNode = signature.childNodes[2];
+        let i = -1;
+        while(signature.childNodes[i += 2].nodeName.toLowerCase() === 'wbr');
+        const argsTextNode = signature.childNodes[i + 1];
         if(argsTextNode.nodeType === HTMLElement.TEXT_NODE){
             argsTextNode.nextSibling.remove();
             argsTextNode.remove();
