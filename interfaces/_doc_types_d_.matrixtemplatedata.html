@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BaseUserData | Matrixbot API</title>
+	<title>MatrixTemplateData | Matrixbot API</title>
 	<meta name="description" content="Documentation for Matrixbot API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -60,10 +60,10 @@
 					<a href="../modules/_doc_types_d_.html">&quot;doc/types.d&quot;</a>
 				</li>
 				<li>
-					<a href="_doc_types_d_.baseuserdata.html">BaseUserData</a>
+					<a href="_doc_types_d_.matrixtemplatedata.html">MatrixTemplateData</a>
 				</li>
 			</ul>
-			<h1>Interface BaseUserData</h1>
+			<h1>Interface MatrixTemplateData</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">BaseUserData</span>
+						<span class="target">MatrixTemplateData</span>
 					</li>
 				</ul>
 			</section>
@@ -85,8 +85,11 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.baseuserdata.html#email" class="tsd-kind-icon">email</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.baseuserdata.html#password" class="tsd-kind-icon">password</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.matrixtemplatedata.html#arc" class="tsd-kind-icon">arc</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.matrixtemplatedata.html#factor" class="tsd-kind-icon">factor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.matrixtemplatedata.html#grid" class="tsd-kind-icon">grid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.matrixtemplatedata.html#orders" class="tsd-kind-icon">orders</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_doc_types_d_.matrixtemplatedata.html#placeby" class="tsd-kind-icon">placeby</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,24 +98,84 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="email" class="tsd-anchor"></a>
-					<h3>email</h3>
-					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="arc" class="tsd-anchor"></a>
+					<h3>arc</h3>
+					<div class="tsd-signature tsd-kind-icon">arc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L4">doc/types.d.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L169">doc/types.d.ts:169</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Grid arc factor</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-					<a name="password" class="tsd-anchor"></a>
-					<h3>password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="factor" class="tsd-anchor"></a>
+					<h3>factor</h3>
+					<div class="tsd-signature tsd-kind-icon">factor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">float</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L5">doc/types.d.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L163">doc/types.d.ts:163</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Matrix factor</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="grid" class="tsd-anchor"></a>
+					<h3>grid</h3>
+					<div class="tsd-signature tsd-kind-icon">grid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">float</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L174">doc/types.d.ts:174</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Orders grid in %</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><p>[0.1, 0.5, ..., 3.4]</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="orders" class="tsd-anchor"></a>
+					<h3>orders</h3>
+					<div class="tsd-signature tsd-kind-icon">orders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L167">doc/types.d.ts:167</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Orders in grid</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="placeby" class="tsd-anchor"></a>
+					<h3>placeby</h3>
+					<div class="tsd-signature tsd-kind-icon">placeby<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">int</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matrixbotio/api-node/blob/58fd1a6/doc/types.d.ts#L165">doc/types.d.ts:165</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Partial placing of orders</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -147,13 +210,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="_doc_types_d_.baseuserdata.html" class="tsd-kind-icon">Base<wbr>User<wbr>Data</a>
+						<a href="_doc_types_d_.matrixtemplatedata.html" class="tsd-kind-icon">Matrix<wbr>Template<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_doc_types_d_.baseuserdata.html#email" class="tsd-kind-icon">email</a>
+								<a href="_doc_types_d_.matrixtemplatedata.html#arc" class="tsd-kind-icon">arc</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
-								<a href="_doc_types_d_.baseuserdata.html#password" class="tsd-kind-icon">password</a>
+								<a href="_doc_types_d_.matrixtemplatedata.html#factor" class="tsd-kind-icon">factor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_doc_types_d_.matrixtemplatedata.html#grid" class="tsd-kind-icon">grid</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_doc_types_d_.matrixtemplatedata.html#orders" class="tsd-kind-icon">orders</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_doc_types_d_.matrixtemplatedata.html#placeby" class="tsd-kind-icon">placeby</a>
 							</li>
 						</ul>
 					</li>
